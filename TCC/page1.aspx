@@ -94,17 +94,17 @@
             <i class="fas fa-lock prefix grey-text"></i>
             <label data-error="wrong" data-success="right" for="orangeForm-pass">Your password</label>
            <!-- <input type="password" id="orangeForm-pass" class="form-control validate"  required>-->
-              <asp:TextBox ID="TextBox2" type="password"  class="form-control validate"  required runat="server"></asp:TextBox>
-          </div>
+              <asp:TextBox ID="TextBox2" type="password"  class="form-control validate" required runat="server"></asp:TextBox>
+              </div>
           <div class="form-check" style="font-weight: bold;">
-            <input type="checkbox" required> <span > I have read and agreed to the <a  href="#" style="color: blue;">Trems Of Services</a> ! </span>
+            <input type="checkbox" required>  <span > I have read and agreed to the <a  href="#" style="color: blue;">Trems Of Services</a> ! </span>
         </div>
   
         </div>
         <div class="modal-footer d-flex justify-content-center">
           <!--<button class="btn btn-primary">Sign In</button>-->
-            <asp:Button class="btn btn-primary" runat="server" Text="Sign In"></asp:Button>
-        </div>
+            <asp:Button ID="btnsignin" class="btn btn-primary" runat="server" Text="Sign In" OnClick="btnsignin_Click" />
+            </div>
       </div>
     </div>
   </div>
@@ -191,6 +191,7 @@
                 <li><i class="ri-check-double-line"></i>How to desgin your own website</li>
               </ul>
               <p>
+                  <asp:GridView ID="GridView1" runat="server"></asp:GridView>
                We have the best engineers to help you in this road that you have chosen.
               </p>
             </div>
